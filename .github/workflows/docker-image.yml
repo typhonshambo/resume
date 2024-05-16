@@ -1,10 +1,10 @@
-name: Build Resume
+name: Docker Image CI
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -13,19 +13,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Build Docker image
+    - name: Build the Docker image
       run: docker build . --file Dockerfile --tag latex-resume:latest
 
-    - name: Compile LaTeX to PDF
-      run: docker run --rm -v ${{ github.workspace }}:/data latex-resume:latest pdflatex main.tex
+    - name: Run Docker container to generate PDF and PNG
+      run: docker run --rm -v ${{ github.workspace }}:/data latex-resume:latest
 
-    - name: Convert PDF to PNG
-      run: docker run --rm -v ${{ github.workspace }}:/data latex-resume:latest convert -density 300 main.pdf -quality 90 main.png
-
-    - name: Upload PDF and PNG to repository
-      uses: actions/upload-artifact@v2
-      with:
-        name: compiled-resume
-        path: |
-          main.pdf
-          main.png
+    - name: Commit PDF and PNG files
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add main.pdf main.png
+        git commit -m 'Auto-generated PDF and PNG'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

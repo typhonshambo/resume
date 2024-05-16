@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Build and Deploy LaTeX Resume
 
 on:
   push:
@@ -7,12 +7,30 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+    
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag latex-resume:latest
+
+    - name: Compile LaTeX to PDF
+      run: docker run --rm -v $(pwd):/data latex-resume pdflatex main.tex
+
+    - name: Convert PDF to PNG
+      run: docker run --rm -v $(pwd):/data latex-resume convert -density 300 main.pdf -quality 90 main.png
+
+    - name: Commit and push PDF and PNG
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add main.pdf main.png
+        git commit -m "Auto-build resume PDF and PNG"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

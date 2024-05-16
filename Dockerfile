@@ -5,15 +5,15 @@ FROM texlive/texlive:latest
 RUN apt-get update && \
     apt-get install -y imagemagick texlive-fonts-extra
 
-# Set the working directory
-WORKDIR /data/latex  # Create a dedicated directory for LaTeX files
+# Set the working directory (adjust if needed)
+WORKDIR /data/latex
 
-# Copy your LaTeX files into the container
-COPY . /data/latex
+# Copy main.tex directly
+COPY main.tex /data/latex
 
 # Build the LaTeX document
 RUN pdflatex main.tex
 
 # Convert PDF to PNG (executed outside the container for more control)
-# (Optional: Remove CMD if you execute this command in your workflow)
+# (Optional: Remove CMD if you execute this in your workflow)
 # CMD ["convert", "-density", "300", "main.pdf", "-quality", "90", "main.png"]

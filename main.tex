@@ -1,0 +1,326 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\setlength{\multicolsep}{-3pt}
+\setlength{\columnsep}{-1pt}
+
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Shambo Chowdhury} \\ \vspace{1pt}
+    Kharagpur,West Bengal \\ \vspace{1pt}
+    \small \href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9679033262} ~} 
+    \href{mailto:shamboc04@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shamboc04@gmail.com}} ~ 
+    \href{mailto:shamboc04@kgpian.iitkgp.ac.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{shamboc04@kgpian.iitkgp.ac.in}} ~ 
+    \href{https://linkedin.com/in/shambo04}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/typhonshambo}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+
+\end{center}
+ \vspace{0.5mm}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology (IIT), Kharagpur}{2023 – 2027}
+      {B.Tech - Chemical Enggineering}{Kharagpur, West Bengal}
+  \resumeSubHeadingListEnd
+  
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\vspace{-5pt}
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{l|p{15cm}}
+\hline
+\textbf{Languages} & Python, C, SQL, Bash, Latex \\
+\hline
+\textbf{Data Science} & Pandas, NumPy, SciKit-Learn, Matplotlib,Seaborn, Requests, Urllib3, BeautifulSoup4 \\
+\hline
+\textbf{MLOps} & ZenML, PyArrow, MLflow, Streamlit \\
+\hline
+\textbf{DBMS} & PostgreSQL, MongoDB, MySQL \\
+\hline
+\textbf{Hosting} & AWS Elastic Beanstalk, Microsoft Azure, Azure App Service, Heroku \\
+\hline
+\textbf{Frameworks} & Flask, Web Scrapping, REST-API, HTTP requests, \\
+\hline
+\textbf{OS Platforms} & Windows (7,8,8.1,10,11), Ubuntu (20.xx,22.xx, 22.xx), Debian, MacOS X, Chrome-OS \\
+\hline
+\textbf{Others} & Discord/Telegram Bot development, Git and Github, CI/CD, Jupyter Notebook, Repl, VS Code, IntelliJ, Google Clouds model deployment \\
+\hline
+\end{tabularx}
+\end{center}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/valo-shop}{\textbf{\large{\underline{\textbf{Valo-shop}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, PostgreSQL, REST-API, Hosting services}}}{2022-Present}\\
+          \resumeItemListStart
+            \resumeItem {\normalsize {Developed a Discord bot that allows users to view their Valorant in-game inventory along with many other features from their discord}}
+            \resumeItem{\normalsize{BOT is used by over \textbf{2.5k+} servers and have grown expotentially in just 1 year}}
+            \resumeItem{\normalsize{Implemented things like \textbf{API calls, Database management, Hosting and many more.} and also tackled problems like \textbf{Rate Limiting, API Cookie Handling, User Security, Pipeline Issues etc} }}
+            
+  
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/vstat-bot/tree/slash}{\textbf{\large{\underline{\textbf{Vstat}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, PostgreSQL, MongoDB, Amazon-AWS-EC2, REST-API}}}{2022-Present}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a Discord bot that allows user to view their \textbf{stats, matches, leaderboard, skins, agents, maps, weapons} and many other features from their discord.}}
+            \resumeItem{\normalsize{Bot is verified by \href{https://top.gg/bot/864451929346539530}{\textbf{{\underline{top.gg}}} \href{topgg Link}}\faExternalLink \textbf{1.7k+ upvotes} and is used in over \textbf{1.3k+ servers}}} 
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/customer-satisfaction-predictor}{\textbf{\large{\underline{\textbf{Customer Satisfaction Predictor}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{MLOps, Mlfow, ZenML, Streamlit}}}{2024}\\
+          \resumeItemListStart
+            \resumeItem {\normalsize{Designed production grade end-to-end Data Science project that predicts the customer satisfaction based on a given dataset.}}
+            \resumeItem{\normalsize{Implemented \textbf{ZenML} for pipeline management, \textbf{MLflow} for model tracking and \textbf{Streamlit} for model deployment.}}
+            \resumeItem{\normalsize{Resolved problems like \textbf{Data Cleaning, Data Preprocessing, Model Evaluation, Model Training, Model Deployment} etc.}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/Advertising-Sales-Prediction}{\textbf{\large{\underline{\textbf{Advertising Sales Prediction (OLS Regression Challenge)}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{scikit-learn, pandas, Matplotlib}}}{2024}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Implemented a Sales Prediction ML model, and solved the {\href{https://data.world/nrippner/ols-regression-challenge}{{\underline{OLS Regression Challenge}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }}.}}}
+            \resumeItem{\normalsize{Designed proper structure like \textbf{Data Cleaning, Data Preprocessing, Model Evaluation, Model Training} etc.}}
+            \resumeItem{\normalsize{Achieved \textbf{90\% accuracy} in the challenge.}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/linear-regression-model}{\textbf{\large{\underline{\textbf{Linear Regression Model (without SK-learn)}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Matplotlib, Linear Algebra}}}{2023}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a Linear Regression Model from scratch without using any \textbf{ML libraries} like \textbf{scikit-learn}.}}
+            \resumeItem{\normalsize{Used it predict Flipper lenght of penguins based on their body mass.}}
+            \resumeItem{\normalsize{Achieved \textbf{80\% accuracy} in prediction}}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\href{https://github.com/typhonshambo/flipkart-review-scrapperl}{\textbf{\large{\underline{\textbf{Flipkart Review Scrapper}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, beautifulsoup4, Flask, Requests}}}{2023}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed a \textbf{full stack} project of flipkart Review Scrapper that scrapes the reviews of all the products available in flipkart based on the search, and provide it in easy readable tabular format}}
+            \resumeItem{\normalsize{Project allows people to easily decide which product to buy based on the reviews}}
+            \resumeItem{\normalsize{Implemented \textbf{Flask} for website and \textbf{beautifulsoup4} for web scrapping amd Deployed the website on \textbf{Vercel}}}
+          \resumeItemListEnd
+          
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{ENGAGEMENTS}
+\vspace{-20pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+    \resumeProjectHeading
+    {\href{https://hacktoberfest.com}{\textbf{\large{\underline{\textbf{Hactoberfest}}}} \href{Link}{\raisebox{-0.1\height}\faExternalLink }}\large{\underline{}}}{2021,2022,2023}\\
+      \resumeItemListStart
+      \resumeItem{\normalsize{Active participant of Hactoberfest and have \textbf{contributed} as well as \textbf{maintained} serveral big \textbf{open-source} projects}} \\
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://go.qwiklabs.com/arcade}{\textbf{\large{\underline{\textbf{Google Cloud Skill Boost Challenge}}}} \href{Link}{\raisebox{-0.1\height}\faExternalLink }}\large{\underline{}}}{2023}\\
+      \resumeItemListStart
+      \resumeItem{\normalsize{Participated in The Arcade and successfully completed different challenges based on \textbf{GenAI}, \textbf{open-LLM},\textbf{Pub/Sub} etc}} \\
+      \resumeItem{\normalsize{Earned \textbf{10 points} in less than month starting from scratch.}} \\
+      \resumeItemListEnd
+    
+      }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+
+
+%-----------Others---------------
+\section{OTHERS}
+\vspace{-20pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+    \resumeProjectHeading
+    {{\textbf{\large{\underline{\textbf{Freelancing}}}}}\large{\underline{}}}{2023-Present}\\
+      \resumeItemListStart
+      \resumeItem{\normalsize{Worked with a client in question papers designing}} \\
+      \resumeItem{\normalsize{Gained proficiency in relevant software tools or applications for question paper design, such as Microsoft Word, LaTeX}} \\
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://www.linkedin.com/company/awaaz-iit-kharagpur}{\textbf{\large{\underline{\textbf{Awaaz}}}} \href{Link}{\raisebox{-0.1\height}\faExternalLink }}\large{\underline{}}}{2023-2024}\\
+      \resumeItemListStart
+      \resumeItem{\normalsize{Been a part of Student Media body of IIT Kharagpur and learnt several skills like \textbf{Video editting}, \textbf{Content Writing},\textbf{Communication skills} etc}} \\
+      \resumeItem{\normalsize{Lead a team of 3 video editors and released teaser video for one of the biggest event called {\href{https://www.instagram.com/reel/C2jGinmx2tH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==}{\textbf{\large{\underline{\textbf{Panch Parmeshwar}}}} \href{Link}}}{\raisebox{-0.1\height}\faExternalLink }}} \\
+      \resumeItemListEnd
+    
+      }}
+ \end{itemize}
+ \vspace{-15pt}
+
+ 
+
+
+ \section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart      
+        \resumeItemListStart
+                \resumeItem{\normalsize{Keen towards Photography and video-graphy, and have worked on several video editing projects}}
+                \resumeItem{\normalsize{Been a part of {\href{https://www.iitkgp.ac.in/department/AF}{\textbf{\large{\underline{\textbf{Academy of Classical and Folk Arts}}}} \href{Link}}}{\raisebox{-0.1\height}\faExternalLink }}}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+ 
+ \end{document}
+ 

@@ -10,11 +10,7 @@ jobs:
                 command: |
                     git config --global user.email "shamboc04@gmail.com"
                     git config --global user.name "typhonshambo"
-            - run:
-                name: clean
-                command: |
-                    rm main.pdf
-                    rm main.png
+ 
             - run:
                 name: makePDF
                 command: latexmk -pdf main.tex

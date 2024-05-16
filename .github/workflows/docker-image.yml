@@ -20,10 +20,10 @@ jobs:
       run: docker build . --file Dockerfile --tag latex-resume:latest
 
     - name: Compile LaTeX to PDF
-      run: docker run --rm -v $(pwd):/data latex-resume pdflatex main.tex
+      run: docker run --rm -v ${{ github.workspace }}:/data latex-resume pdflatex main.tex
 
     - name: Convert PDF to PNG
-      run: docker run --rm -v $(pwd):/data latex-resume convert -density 300 main.pdf -quality 90 main.png
+      run: docker run --rm -v ${{ github.workspace }}:/data latex-resume convert -density 300 main.pdf -quality 90 main.png
 
     - name: Commit and push PDF and PNG
       run: |

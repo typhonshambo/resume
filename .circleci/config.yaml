@@ -1,0 +1,28 @@
+version: 2
+jobs:
+    build:
+        docker:
+            - image: rpseq/docker-latex
+        steps:
+            - checkout
+            - run:
+                name: config
+                command: |
+                    git config --global user.email "shamboc04@gmail.com"
+                    git config --global user.name "typhonshambo"
+            - run:
+                name: clean
+                command: |
+                    rm main.pdf
+                    rm main.png
+            - run:
+                name: makePDF
+                command: latexmk -pdf main.tex
+            - run:
+                name: makePNG
+                command: convert -density 300 main.pdf -quality 90 -flatten main.png
+            - run:
+                name: push
+                command: |
+                    git commit -am "Auto-build $CIRCLE_BUILD_NUM [ci skip]"
+                    git push

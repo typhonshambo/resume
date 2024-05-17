@@ -1,6 +1,12 @@
+### Resume 📌
+you can check [main.pdf](./main.pdf) which is the latest build of my resume
+
+
 # LaTeX Resume Builder with Docker
 
 This project allows me to build my resume in PDF and PNG formats using LaTeX inside a Docker container. This ensures a consistent environment for building my resume, regardless of the host operating system.
+
+
 
 ## Prerequisites
 

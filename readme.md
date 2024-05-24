@@ -1,4 +1,4 @@
-### Resume 📌
+# Resume 📌
 you can check [main.pdf](./main.pdf) which is the latest build of my resume
 
 

@@ -20,7 +20,7 @@ jobs:
                 command: latexmk -pdf main.tex
             - run:
                 name: makePNG
-                command: convert -density 300 main.pdf -quality 90 -flatten main.png
+                command: convert -density 100 main.pdf -quality 90 -flatten main.png
             - run:
                 name: push
                 command: |

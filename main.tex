@@ -51,7 +51,7 @@
 
 %----------FONT OPTIONS----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
+\usepackage{mathptmx}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
@@ -106,7 +106,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\large#1} & \textbf{\small #2} \\
-      \textit{\large#3} & \textit{\small #4} \\
+      {\large#3} & {\small #4} \\
       
     \end{tabular*}\vspace{-7pt}
 }
@@ -175,23 +175,21 @@
 \renewcommand{\arraystretch}{1.2}
 \begin{tabularx}{\textwidth}{l|p{15cm}}
 \hline
-\textbf{Languages} & \hspace{0.1cm}Python, C, SQL, Bash, Latex \\
+\textbf{Languages} & \hspace{0.1cm}Python, C, SQL, Bash \\
 \hline
-\textbf{Data Science} & \hspace{0.1cm}Pandas, NumPy, SciKit-Learn, Matplotlib, Seaborn, BeautifulSoup4 \\
+\textbf{Data Science} \hspace{0.1cm} & \hspace{0.1cm}Data visualization \& wrangling, Statistical analysis, ML modelling\\
 \hline
-\textbf{MLOps} & \hspace{0.1cm}ZenML, PyArrow, MLflow, Streamlit, Dagshub \\
+\textbf{MLOps} & \hspace{0.1cm}ZenML, MLflow, Streamlit, Dagshub \\
 \hline
-\textbf{DevOps} & \hspace{0.1cm}CI/CD pipeline, Github Actions, AWS, GCP \\
+\textbf{DevOps} & \hspace{0.1cm}CI/CD pipeline, Github Actions, AWS Elastic Beanstalk, GCP GKE\\
 \hline
 \textbf{DBMS} & \hspace{0.1cm}PostgreSQL, MongoDB, MySQL \\
 \hline
-\textbf{Hosting} & \hspace{0.1cm}AWS Elastic Beanstalk, Azure App Service, Heroku \\
+\textbf{Hosting} & \hspace{0.1cm}Azure App Service, Heroku \\
 \hline
-\textbf{Frameworks} & \hspace{0.1cm}Flask, Web Scrapping, REST-API\\
+\textbf{Frameworks} & \hspace{0.1cm}Flask, REST-API\\
 \hline
-\textbf{OS Platforms} \hspace{0.1cm}& \hspace{0.1cm}Windows (7,8,8.1,10,11), Ubuntu (20.xx,22.xx, 22.xx), Debian, MacOS X, Chrome-OS \\
-\hline
-\textbf{Others} & \hspace{0.1cm}Discord/Telegram Bot development, Git and Github, Repl, IntelliJ \\
+\textbf{Others} & \hspace{0.1cm}Discord/Telegram Bot development, Web Scrapping \\
 \hline
 \end{tabularx}
 \end{center}
@@ -203,52 +201,50 @@
     \resumeSubHeadingListStart
 
 
-      \resumeProjectHeading
-        {\href{https://github.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance/tree/main}{\textbf{\large{\underline{\textbf{Predictive Maintenance Model}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Mlflow, Streamlit, Dagshub}}}{2024}\\
+        \resumeProjectHeading
+        {\href{https://github.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance/tree/main}{\textbf{\large{\underline{Predictive Maintenance Model}}} \href{https://github.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance/tree/main}{\raisebox{-0.1\height}\faExternalLink}} $|$ \large{\underline{Mlflow, Streamlit, Dagshub}}}{2024}\\
         \resumeItemListStart
-          \resumeItem{\normalsize{Developed a End to End machine learning pipeline and model for predictive maintenance, which can detect the failure of a machine before it actually fails.}}
-          \resumeItem{\normalsize{Performed EDA and achieved an accuracy of \textbf{93\%} in the model}}
-          \resumeItem{\normalsize{Implemented everything end to end like \textbf{Data Cleaning, Data Preprocessing, Model Evaluation, Managing Pipelines, Model Training, Model Deployment} etc.}}
-          
-          
-          \resumeItem{\normalsize{\href{https://typhonshambo-predictive-maintenance.streamlit.app}{\underline{Demo}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \href{https://dagshub.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance.mlflow}{\underline{Model-tracking}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }}
-          
-
-        \resumeItemListEnd 
-        \vspace{-13pt}
+          \resumeItem{\normalsize{Built a Predictive maintenance model to predict sensor device failure based on metrics}}
+          \resumeItem{\normalsize{Achieved a model accuracy of 93\% on the \href{https://typhonshambo-predictive-maintenance.streamlit.app}{\underline{test dataset }}\faExternalLink}}
+          \resumeItem{\normalsize{Implemented Data wrangling, Model Training and Evaluation, Pipelines, Deployment.}}
+          \resumeItem{\normalsize{\href{https://typhonshambo-predictive-maintenance.streamlit.app}{\underline{Demo}} \href{https://typhonshambo-predictive-maintenance.streamlit.app}{\raisebox{-0.1\height}\faExternalLink}} $|$ \href{https://dagshub.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance.mlflow}{\underline{Model Tracking}} \href{https://dagshub.com/typhonshambo/End-to-End-ML-Pipeline-for-Predictive-Maintenance.mlflow}{\raisebox{-0.1\height}\faExternalLink}}
+        \resumeItemListEnd
+      \vspace{-13pt}
+  
   
                   
       \resumeProjectHeading
-      {\href{https://github.com/typhonshambo/customer-satisfaction-predictor}{\textbf{\large{\underline{\textbf{Customer Satisfaction Predictor}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{MLOps, Mlfow, ZenML, Streamlit}}}{2024}\\
+      {\href{https://github.com/typhonshambo/customer-satisfaction-predictor}{\textbf{\large{\underline{\textbf{Customer Satisfaction Predictor}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Mlfow, ZenML, Streamlit}}}{2024}\\
       \resumeItemListStart
-        \resumeItem {\normalsize{Designed production grade end-to-end Data Science project that predicts the customer satisfaction based on a given dataset.}}
-        \resumeItem{\normalsize{Implemented \textbf{ZenML} for pipeline management, \textbf{MLflow} for model tracking and \textbf{Streamlit} for model deployment.}}
-        \resumeItem{\normalsize{Resolved problems like \textbf{Data Cleaning, Data Preprocessing, Model Evaluation, Model Training, Model Deployment} etc.}}
+        \resumeItem {\normalsize{Developed an ML model to predict customer satisfaction for a product on a scale of 0-5}}
+        \resumeItem{\normalsize{Implemented ZenML for pipeline management, MLflow for model tracking and Streamlit for model deployment.}}
+        \resumeItem{\normalsize{Optimized training dataset by Data Augmentation, Data Balancing, Hyperparameter Tuning etc.}}
       \resumeItemListEnd 
       \vspace{-13pt}
       
       
   \resumeProjectHeading
-      {\href{https://github.com/typhonshambo/Advertising-Sales-Prediction}{\textbf{\large{\underline{\textbf{Advertising Sales Prediction (OLS Regression Challenge)}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{scikit-learn, pandas, Matplotlib}}}{2024}\\
+      {\href{https://github.com/typhonshambo/Advertising-Sales-Prediction}{\textbf{\large{\underline{\textbf{Advertising Sales Prediction}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{scikit-learn, pandas, Matplotlib}}}{2024}\\
       \resumeItemListStart
-        \resumeItem{\normalsize{Implemented a Sales Prediction ML model, and solved the {\href{https://data.world/nrippner/ols-regression-challenge}{{\underline{OLS Regression Challenge}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }}.}}}
-        \resumeItem{\normalsize{Designed proper structure like \textbf{Data Cleaning, Data Preprocessing, Model Evaluation, Model Training} etc.}}
-        \resumeItem{\normalsize{Achieved \textbf{90\% accuracy} in the challenge.}}
+        \resumeItem{\normalsize{Implemented a Sales Prediction ML model, and solved the OLS Regression Challenge.}}
+        \resumeItem{\normalsize{Structured the code for data cleaning, preprocessing, model training, and evaluation.}}
+        \resumeItem{\normalsize{Achieved a model accuracy of 90\% on test dataset.}}
       \resumeItemListEnd
       \vspace{-13pt}
       \resumeProjectHeading
-          {\href{https://github.com/typhonshambo/valo-shop}{\textbf{\large{\underline{\textbf{Valo-shop}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, PostgreSQL, REST-API, Hosting services}}}{2022-Present}\\
+          {\href{https://github.com/typhonshambo/valo-shop}{\textbf{\large{\underline{\textbf{Valo-shop}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{PostgreSQL, REST-API, Hosting services}}}{2022-Present}\\
           \resumeItemListStart
-            \resumeItem{\normalsize{Developed a Discord bot that allows users to view their Valorant in-game inventory along with many other features from their discord}}
-            \resumeItem{\normalsize{BOT is used by over \textbf{2.5k+} servers and have grown expotentially in just 1 year}}
-            \resumeItem{\normalsize{Implemented things like \textbf{API calls, Database management, Hosting and many more.} and also tackled problems like \textbf{Rate Limiting, API Cookie Handling, User Security, Pipeline Issues etc} }}
+            \resumeItem{\normalsize{Developed a Discord bot that allows users to view their Valorant in-game inventory and store from their discord}}
+            \resumeItem{\normalsize{BOT is used by over \underline{2.8k+ servers} and have grown exponentially in just 1 year}}
+            \resumeItem{\normalsize{Implemented API calls, Database management, Hosting etc}}
+            \resumeItem{\normalsize{Resolved errors based on Rate Limiting, API Cookie Handling, User Security, Pipeline Issues etc}}
           \resumeItemListEnd 
           \vspace{-13pt}
       \resumeProjectHeading
-          {\href{https://github.com/typhonshambo/vstat-bot/tree/slash}{\textbf{\large{\underline{\textbf{Vstat}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, PostgreSQL, MongoDB, Amazon-AWS-EC2, REST-API}}}{2022-Present}\\
+          {\href{https://github.com/typhonshambo/vstat-bot/tree/slash}{\textbf{\large{\underline{\textbf{Vstat}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{PostgreSQL, MongoDB, Amazon-AWS-EC2, REST-API}}}{2022-Present}\\
           \resumeItemListStart
-            \resumeItem{\normalsize{Developed a Discord bot that allows user to view their \textbf{stats, matches, leaderboard, skins, agents, maps, weapons} and many other features from their discord.}}
-            \resumeItem{\normalsize{Bot is verified by \href{https://top.gg/bot/864451929346539530}{\textbf{{\underline{top.gg}}} \href{topgg Link}}\faExternalLink \textbf{1.7k+ upvotes} and is used in over \textbf{1.3k+ servers}}} 
+            \resumeItem{\normalsize{Developed a Discord bot for Valorant that displays user stats, matches, leaderboards, skins, agents, maps, and weapons}}
+            \resumeItem{\normalsize{Bot is verified by \href{https://top.gg/bot/864451929346539530}{{{\underline{top.gg}}} \href{topgg Link}}\faExternalLink with \underline{1.7k+ upvotes} and is used in over \underline{1.3k+ servers}}} 
           \resumeItemListEnd 
           \vspace{-13pt}
 
@@ -274,6 +270,7 @@
     \resumeSubHeadingListEnd
 \vspace{-12pt}
 
+\pagebreak
 %-----------PROGRAMMING SKILLS-----------
 \section{ENGAGEMENTS}
 \vspace{-20pt}

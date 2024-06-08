@@ -20,7 +20,7 @@ jobs:
                 command: latexmk -pdf main.tex -jobname=Shambo_Chowdhury_Resume
             - run:
                 name: makePNG
-                command: convert -density 100 Shambo_Chowdhury_Resume.pdf -quality 90 -flatten Shambo_Chowdhury_Resume.png
+                command: convert -density 300 Shambo_Chowdhury_Resume.pdf[0] -quality 90 -flatten Shambo_Chowdhury_Resume.png
             - run:
                 name: push
                 command: |

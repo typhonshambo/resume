@@ -1,5 +1,5 @@
 # Resume 📌
-you can check [main.pdf](./main.pdf) which is the latest build of my resume
+you can check [Shambo_Chowdhury_Resume.pdf](./Shambo_Chowdhury_Resume.pdf) which is the latest build of my resume
 
 
 # LaTeX Resume Builder with Docker
